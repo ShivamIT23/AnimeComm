@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Container from "./Components/Container"
 
 function App() {
   const [backendData, setBackendData] = useState([{}]);
@@ -11,7 +12,7 @@ function App() {
     console.log(backendData);
   return (
     <div>
-      <h1>hello</h1>
+      <Container />
     </div>
   );
 }
