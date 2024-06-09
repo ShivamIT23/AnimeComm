@@ -1,9 +1,12 @@
+import { Background } from "./Chatroom/Background"
+import { Navbar } from "./Navigation/Navbar"
 
 
 function Container() {
   return (
     <>
-    hello
+    <Background />
+    <Navbar />
     </>
   )
 }
