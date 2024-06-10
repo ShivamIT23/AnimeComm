@@ -1,70 +1,117 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
+html , body {
+  width: 100%;
+  height: 100%;
+
+  background-color: #000000;
+  position: absolute;
 }
 
-.Background-Img{
-    /* Anime Backgroun f46d881a-1261-4ee9-93c3-4dd95e466e3e 1 */
-
-position: absolute;
-width: 100%;
-height:fit-content;
-mix-blend-mode: exclusion;
-opacity: 0.7;
-border-radius: 54px;
-
+.Bg-Container{
+    display: table;
 }
 
-.Common-Nav{
-    /* Rectangle 2 */
-position: absolute;
-width: 98%;
-height: 76px;
+.Container {
+    position: absolute;
+  width: 100%;
+  min-height: max-content;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: row;
+}
 
-background: #202420;
-mix-blend-mode: difference;
-border-radius: 33px;
+.Background-Img {
+  /* Anime Backgroun f46d881a-1261-4ee9-93c3-4dd95e466e3e 1 */
 
-padding: 2%;
+  display: table-row;
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  mix-blend-mode: exclusion;
+  opacity: 0.7;
+  border-radius: 54px;
+}
 
+.Common-Nav {
+  /* Rectangle 2 */
+  position: fixed;
+  margin: 0 1.5%;
+  width: 96%;
+  height: 76px;
+
+  background: #202420;
+  mix-blend-mode: difference;
+  border-radius: 33px;
+  /* overflow: hidden; */
+  padding: 2%;
+}
+
+.NavItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* row-gap: 2%; */
+}
+
+.NavItems-List {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
-.HOME{
-    /* HOME */
+.HOME,
+.ABOUT,
+.CONTACT {
+  /* HOME */
 
-/* HOME */
+  /* HOME */
 
-position: absolute;
-width: 77px;
-height: 0px;
+  position: relative;
+  margin-right: 150px;
+  height: 0px;
 
-font-family: 'Inter';
-font-style: italic;
-font-weight: 700;
-font-size: 28px;
-line-height: 2%;
-/* or 0px */
-text-align: center;
-letter-spacing: 0.05em;
-mix-blend-mode :normal;
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2%;
+  /* or 0px */
+  text-align: center;
+  letter-spacing: 0.05em;
+  mix-blend-mode: normal;
 
-color: #ffffff;
+  color: #ffffff;
 
-border: 5px solid #000000;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
+  border: 5px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.NavIcon {
+  background-image: url("/IconLogo0.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 150px;
+  height: 80px;
+  position: relative;
+  mix-blend-mode: plus-lighter;
+  bottom: calc(7rem - 4rem);
+}
 
+.Footer-div {
+  /* position: absolute;
+    bottom: 0;
+    left: 0; */
+  align-self: flex-end;
+  height: 10vh;
+  background-color: #ffffff;
+  color: #1e1e1e;
+}
