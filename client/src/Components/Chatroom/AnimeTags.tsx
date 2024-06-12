@@ -2,8 +2,11 @@ import AnimeTagsItem from "./AnimeTagsItem";
 
 export default function AnimeTags() {
 
-    const companyList = useFeedbackItemsStore((state) => state.getCompanyList());
-  const selectCompany = useFeedbackItemsStore((state) => state.selectCompany);
+  //   const companyList = useFeedbackItemsStore((state) => state.getCompanyList());
+  // const selectCompany = useFeedbackItemsStore((state) => state.selectCompany);
+
+  const companyList = [""]
+
 
   return (
     <ul className="hashtags">
@@ -14,6 +17,7 @@ export default function AnimeTags() {
           onSelectCompany={selectCompany}
         />
       ))}
+      </ul>
   )
 }
 
